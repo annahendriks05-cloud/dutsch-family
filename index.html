@@ -4,9 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Dutch Family</title>
+    <title>Dutch Family | Festverzinsliche Anlagen</title>
+    <!--[if mso]>
+    <noscript>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
     <style>
-        /* Reset styles */
+        /* Reset styles for email clients */
         body,
         table,
         td,
@@ -42,8 +51,6 @@
             margin: 0 !important;
             padding: 0 !important;
             width: 100% !important;
-            background-color: #f1f5f9;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
 
         /* Link styles */
@@ -51,7 +58,7 @@
             color: #003139;
         }
 
-        /* Form element styles */
+        /* Form element styles for email clients */
         input,
         textarea,
         button {
@@ -83,6 +90,23 @@
         /* Required field indicator */
         .required {
             color: #ef4444 !important;
+        }
+
+        /* Outlook-specific fixes */
+        .outlook-fix {
+            mso-line-height-rule: exactly;
+            line-height: 0;
+            font-size: 0;
+        }
+
+        /* Gmail-specific fixes */
+        .gmail-fix {
+            display: block !important;
+        }
+
+        /* Apple Mail fixes */
+        .apple-fix {
+            -webkit-text-size-adjust: none;
         }
 
         /* Form container max-width */
@@ -137,6 +161,19 @@
                 box-sizing: border-box !important;
             }
 
+            .logo-container img {
+                max-width: 150px !important;
+            }
+
+            .hero-text {
+                font-size: 24px !important;
+            }
+
+            .section-title {
+                font-size: 22px !important;
+            }
+
+            /* Form field mobile styles */
             .form-field-mobile {
                 display: block !important;
                 width: 100% !important;
@@ -144,14 +181,16 @@
                 padding-right: 0 !important;
             }
 
+            /* Form input mobile styles */
             input[type="text"],
             input[type="email"],
             input[type="tel"],
             textarea {
-                font-size: 16px !important;
+                font-size: 16px !important; /* Prevents iOS zoom on focus */
                 padding: 16px !important;
             }
 
+            /* Button mobile styles */
             button[type="submit"] {
                 width: 100% !important;
                 padding: 18px 20px !important;
@@ -159,24 +198,30 @@
                 box-sizing: border-box !important;
             }
 
+            /* Form container mobile padding */
             table[style*="padding: 30px"] {
                 padding: 20px 15px !important;
             }
 
+            /* Label mobile styles */
             label {
                 font-size: 11px !important;
             }
         }
 
+        /* Additional mobile styles for smaller screens */
         @media screen and (max-width: 480px) {
+            /* Reduce padding on very small screens */
             table[style*="padding: 30px"] {
                 padding: 15px 10px !important;
             }
 
+            /* Adjust form header */
             td[style*="padding: 20px 30px"] {
                 padding: 15px 15px !important;
             }
 
+            /* Adjust button text */
             button[type="submit"] {
                 font-size: 15px !important;
                 padding: 16px 15px !important;
@@ -185,32 +230,289 @@
     </style>
 </head>
 
-<body style="margin: 0; padding: 0; background-color: #f1f5f9; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+<body
+    style="margin: 0; padding: 0; background-color: #f1f5f9; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
 
-    <!-- Preheader Text -->
+    <!-- Preheader Text (shows in inbox preview) -->
     <div style="display: none; max-height: 0px; overflow: hidden;">
-        Kontaktieren Sie uns - Dutch Family
+        Festverzinsliche Anlagen von Shell International Finance B.V. - Hohe Rendite & AAA Rating
     </div>
 
     <!-- Main Wrapper -->
-    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f1f5f9;">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="background-color: #f1f5f9;">
         <tr>
             <td align="center" style="padding: 20px 10px;">
 
-                <!-- Header -->
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="email-container" style="background-color: #ffffff; max-width: 600px; width: 100%;">
+                <!-- Email Container -->
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="email-container"
+                    width="600" style="background-color: #ffffff; max-width: 600px; width: 100%;">
+
+                    <!-- HEADER -->
                     <tr>
                         <td style="padding: 25px 40px; border-bottom: 1px solid #e2e8f0; background-color: #ffffff;">
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
                                     <td class="mobile-center" style="vertical-align: middle;">
-                                        <a href="index2.html" style="text-decoration: none;">
-                                            <img src="https://imagizer.imageshack.com/v2/280x200q70/922/NusaK9.png" alt="Dutch Family" width="200" style="height: auto; max-width: 200px; width: 100%; display: block;">
-                                        </a>
+                                        <!-- Dutch Family Logo -->
+                                        <img src="https://imagizer.imageshack.com/v2/280x200q70/922/NusaK9.png"
+                                            alt="Dutch Family" width="200"
+                                            style="height: auto; max-width: 200px; width: 100%; display: block;">
                                     </td>
-                                    <td class="mobile-center" style="vertical-align: middle; text-align: right; padding-top: 10px;" align="right">
-                                        <a href="index2.html" style="text-decoration: none;">
-                                            <img src="https://imagizer.imageshack.com/v2/100x75q70/922/byy19C.png" alt="Shell Logo" width="100" style="height: auto; width: 100px; max-width: 100px; display: block; background-color: transparent;">
+                                    <td class="mobile-center"
+                                        style="vertical-align: middle; text-align: right; padding-top: 10px;"
+                                        align="right">
+                                        <!-- Shell Logo from Web -->
+                                        <img src="https://imagizer.imageshack.com/v2/100x75q70/922/byy19C.png"
+                                            alt="Shell Logo" width="100"
+                                            style="height: auto; width: 100px; max-width: 100px; display: block; background-color: transparent;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- HERO SECTION -->
+                    <tr>
+                        <td style="background-color: #56e341; padding: 50px 40px; text-align: center;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center" style="padding-bottom: 20px;">
+                                        <!-- Shell Pecten Icon -->
+                                        <img src="https://imagizer.imageshack.com/v2/100x75q70/922/byy19C.png"
+                                            alt="Shell" width="80"
+                                            style="height: auto; width: 80px; max-width: 80px; display: block; background-color: transparent;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        style="font-size: clamp(26px, 5vw, 38px); font-weight: 900; line-height: 1.2; color: #003139; letter-spacing: -1px; padding-bottom: 15px;">
+                                        Festverzinsliche Anlagen -<br>Shell International Finance B.V.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <span
+                                            style="display: inline-block; background-color: #003139; color: #ffffff; padding: 12px 25px; border-radius: 10px; font-weight: 800; font-size: 14px;">
+                                            🎁 Zinsen + Cashback Bonus | Gültig bis 19.03.2026
+                                        </span>
+                                    </td>
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                            width="100%"
+                                            style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,49,57,0.1);">
+                                            <tr style="background-color: #003139;">
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 11px; font-weight: 800; color: #ffffff; text-transform: uppercase;">
+                                                    Mindesteinlage</td>
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 11px; font-weight: 800; color: #56e341;">
+                                                    Zinsen</td>
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 11px; font-weight: 800; color: #56e341;">
+                                                    Cashback</td>
+                                            </tr>
+                                            <tr style="background-color: #f8fafc;">
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 700; color: #003139;">
+                                                    25.000 €</td>
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 800; color: #003139;">
+                                                    4,95%</td>
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 800; color: #56e341;">
+                                                    0,80%</td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 700; color: #003139;">
+                                                    50.000 €</td>
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 800; color: #003139;">
+                                                    4,95%</td>
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 800; color: #56e341;">
+                                                    0,90%</td>
+                                            </tr>
+                                            <tr style="background-color: #f8fafc;">
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 700; color: #003139;">
+                                                    100.000 €</td>
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 800; color: #003139;">
+                                                    4,95%</td>
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 800; color: #56e341;">
+                                                    1,40%</td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 700; color: #003139;">
+                                                    150.000 €</td>
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 800; color: #003139;">
+                                                    5,70%</td>
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 800; color: #56e341;">
+                                                    1,80%</td>
+                                            </tr>
+                                            <tr style="background-color: #f8fafc;">
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 700; color: #003139;">
+                                                    500.000 €</td>
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 800; color: #003139;">
+                                                    5,70%</td>
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 800; color: #56e341;">
+                                                    1,80%</td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 700; color: #003139;">
+                                                    1.000.000 €</td>
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 800; color: #003139;">
+                                                    5,70%</td>
+                                                <td
+                                                    style="padding: 12px 10px; text-align: center; font-size: 13px; font-weight: 800; color: #56e341;">
+                                                    Individuell</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 18px; font-weight: 600; color: #003139; opacity: 0.85; line-height: 1.5;">
+                            Feste Rendite, hohe Bonität und kurze Laufzeit (12 Monate)
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- INTRO SECTION -->
+        <tr>
+            <td style="padding: 40px 40px 20px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                        <td style="border-left: 5px solid #56e341; padding-left: 15px; margin-bottom: 20px;">
+                            <span
+                                style="font-size: 12px; font-weight: 900; text-transform: uppercase; letter-spacing: 2px; color: #003139;">
+                                Emittentenvorstellung
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 15px; color: #64748b; line-height: 1.7;">
+                            <strong style="color: #003139;">Shell International Finance B.V.</strong> (Rating Aa2 -
+                            Moody's) steht für Investment Grade Qualität. Als einer der stabilsten Emittenten am
+                            Kapitalmarkt bietet Shell Anlegern eine außergewöhnliche Sicherheit für ihr Portfolio.
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- PRODUCT 1 -->
+        <tr>
+            <td style="padding: 10px 40px 40px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                    style="border: 1px solid #e2e8f0; border-radius: 20px; overflow: hidden;">
+                    <tr>
+                        <td style="padding: 35px; background-color: #ffffff;">
+                            <!-- Product Header -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td style="padding-bottom: 25px;">
+                                        <span style="font-size: 20px; font-weight: 900; color: #003139;">
+                                            Produkt 1 – Shell International Finance B.V.
+                                        </span>
+                                        <br>
+                                        <span
+                                            style="display: inline-block; margin-top: 8px; font-size: 11px; font-weight: 900; background-color: #003139; color: #ffffff; padding: 4px 10px; border-radius: 4px;">
+                                            RATING: Aa2 (MOODY'S)
+                                        </span>
+                                        <span
+                                            style="display: inline-block; margin-top: 8px; margin-left: 8px; font-size: 10px; font-weight: 900; background-color: #56e341; color: #003139; padding: 5px 12px; border-radius: 6px;">
+                                            BÖRSE FRANKFURT
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Yield Display -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="font-size: 56px; font-weight: 900; color: #56e341; line-height: 0.9; letter-spacing: -3px; padding-bottom: 35px;">
+                                        4,95% <span
+                                            style="font-size: 20px; color: #64748b; vertical-align: middle;">p.a.</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Specs Grid -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                style="border-top: 1px solid #e2e8f0; padding-top: 25px; margin-bottom: 30px;">
+                                <tr>
+                                    <td style="width: 50%; vertical-align: top; padding-bottom: 20px;">
+                                        <p
+                                            style="font-size: 11px; font-weight: 900; color: #94a3b8; text-transform: uppercase; margin: 0 0 4px 0; letter-spacing: 0.5px;">
+                                            WKN / ISIN</p>
+                                        <p style="font-size: 14px; font-weight: 800; color: #003139; margin: 0;">A0T4XW
+                                            / US822582AD40</p>
+                                    </td>
+                                    <td style="width: 50%; vertical-align: top; padding-bottom: 20px;">
+                                        <p
+                                            style="font-size: 11px; font-weight: 900; color: #94a3b8; text-transform: uppercase; margin: 0 0 4px 0; letter-spacing: 0.5px;">
+                                            Laufzeit</p>
+                                        <p style="font-size: 14px; font-weight: 800; color: #003139; margin: 0;">12
+                                            Monate</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%; vertical-align: top; padding-bottom: 20px;">
+                                        <p
+                                            style="font-size: 11px; font-weight: 900; color: #94a3b8; text-transform: uppercase; margin: 0 0 4px 0; letter-spacing: 0.5px;">
+                                            Mindestinvestition</p>
+                                        <p style="font-size: 14px; font-weight: 800; color: #003139; margin: 0;">€
+                                            25.000</p>
+                                    </td>
+                                    <td style="width: 50%; vertical-align: top; padding-bottom: 20px;">
+                                        <p
+                                            style="font-size: 11px; font-weight: 900; color: #94a3b8; text-transform: uppercase; margin: 0 0 4px 0; letter-spacing: 0.5px;">
+                                            Höchstinvestition</p>
+                                        <p style="font-size: 14px; font-weight: 800; color: #003139; margin: 0;">€
+                                            1.000.000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%; vertical-align: top; padding-bottom: 20px;">
+                                        <p
+                                            style="font-size: 11px; font-weight: 900; color: #94a3b8; text-transform: uppercase; margin: 0 0 4px 0; letter-spacing: 0.5px;">
+                                            Nächste Auszahlung</p>
+                                        <p style="font-size: 14px; font-weight: 800; color: #003139; margin: 0;">
+                                            15.06.2026</p>
+                                    </td>
+                                    <td style="width: 50%; vertical-align: top; padding-bottom: 20px;">
+                                        <p
+                                            style="font-size: 11px; font-weight: 900; color: #94a3b8; text-transform: uppercase; margin: 0 0 4px 0; letter-spacing: 0.5px;">
+                                            Bonität</p>
+                                        <p style="font-size: 14px; font-weight: 800; color: #003139; margin: 0;">
+                                            Investment Grade</p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- CTA Button -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center">
+                                        <a href="#"
+                                            style="display: inline-block; padding: 16px 40px; background-color: #003139; color: #ffffff; text-decoration: none; font-weight: 800; font-size: 16px; border-radius: 12px; text-align: center;">
+                                            Exposé anfordern
                                         </a>
                                     </td>
                                 </tr>
@@ -218,20 +520,312 @@
                         </td>
                     </tr>
                 </table>
+            </td>
+        </tr>
 
-                <!-- Title Section -->
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="email-container" style="background-color: #ffffff; max-width: 600px; width: 100%;">
+        <!-- PRODUCT 2 (PREMIUM) -->
+        <tr>
+            <td style="padding: 0 40px 40px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                    style="border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0, 49, 57, 0.15);">
                     <tr>
-                        <td style="padding: 40px 40px 20px;">
+                        <td style="padding: 35px; background-color: #003139;">
+                            <!-- Product Header -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td style="padding-bottom: 25px;">
+                                        <span style="font-size: 20px; font-weight: 900; color: #ffffff;">
+                                            Produkt 2 – Shell International Finance B.V.
+                                        </span>
+                                        <br>
+                                        <span
+                                            style="display: inline-block; margin-top: 8px; font-size: 11px; font-weight: 900; background-color: #56e341; color: #003139; padding: 4px 10px; border-radius: 4px;">
+                                            PREMIUM STRATEGY
+                                        </span>
+                                        <span
+                                            style="display: inline-block; margin-top: 8px; margin-left: 8px; font-size: 10px; font-weight: 900; background-color: #56e341; color: #003139; padding: 5px 12px; border-radius: 6px;">
+                                            BÖRSE FRANKFURT
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Yield Display -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td
+                                        style="font-size: 56px; font-weight: 900; color: #56e341; line-height: 0.9; letter-spacing: -3px; padding-bottom: 35px;">
+                                        5,70% <span
+                                            style="font-size: 20px; color: #648a91; vertical-align: middle;">p.a.</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Specs Grid -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 25px; margin-bottom: 30px;">
+                                <tr>
+                                    <td style="width: 50%; vertical-align: top; padding-bottom: 20px;">
+                                        <p
+                                            style="font-size: 11px; font-weight: 900; color: #648a91; text-transform: uppercase; margin: 0 0 4px 0; letter-spacing: 0.5px;">
+                                            WKN / ISIN</p>
+                                        <p style="font-size: 14px; font-weight: 800; color: #ffffff; margin: 0;">PJ0HA6
+                                            / DE000PJ0HA62</p>
+                                    </td>
+                                    <td style="width: 50%; vertical-align: top; padding-bottom: 20px;">
+                                        <p
+                                            style="font-size: 11px; font-weight: 900; color: #648a91; text-transform: uppercase; margin: 0 0 4px 0; letter-spacing: 0.5px;">
+                                            Laufzeit</p>
+                                        <p style="font-size: 14px; font-weight: 800; color: #ffffff; margin: 0;">12
+                                            Monate</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%; vertical-align: top; padding-bottom: 20px;">
+                                        <p
+                                            style="font-size: 11px; font-weight: 900; color: #648a91; text-transform: uppercase; margin: 0 0 4px 0; letter-spacing: 0.5px;">
+                                            Mindestinvestition</p>
+                                        <p style="font-size: 14px; font-weight: 800; color: #ffffff; margin: 0;">€
+                                            100.000</p>
+                                    </td>
+                                    <td style="width: 50%; vertical-align: top; padding-bottom: 20px;">
+                                        <p
+                                            style="font-size: 11px; font-weight: 900; color: #648a91; text-transform: uppercase; margin: 0 0 4px 0; letter-spacing: 0.5px;">
+                                            Höchstinvestition</p>
+                                        <p style="font-size: 14px; font-weight: 800; color: #ffffff; margin: 0;">€
+                                            10.000.000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%; vertical-align: top; padding-bottom: 20px;">
+                                        <p
+                                            style="font-size: 11px; font-weight: 900; color: #648a91; text-transform: uppercase; margin: 0 0 4px 0; letter-spacing: 0.5px;">
+                                            Nächste Auszahlung</p>
+                                        <p style="font-size: 14px; font-weight: 800; color: #ffffff; margin: 0;">
+                                            15.06.2026</p>
+                                    </td>
+                                    <td style="width: 50%; vertical-align: top; padding-bottom: 20px;">
+                                        <p
+                                            style="font-size: 11px; font-weight: 900; color: #648a91; text-transform: uppercase; margin: 0 0 4px 0; letter-spacing: 0.5px;">
+                                            Quelle</p>
+                                        <p style="font-size: 14px; font-weight: 800; color: #ffffff; margin: 0;">
+                                            finanzen.at</p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- CTA Button -->
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
                                     <td align="center">
-                                        <span style="font-size: 28px; font-weight: 900; color: #003139; letter-spacing: -1px;">
+                                        <a href="#"
+                                            style="display: inline-block; padding: 16px 40px; background-color: #56e341; color: #003139; text-decoration: none; font-weight: 800; font-size: 16px; border-radius: 12px; text-align: center;">
+                                            Premium-Zugang anfordern
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- SECURITY & GUARANTEES SECTION -->
+        <tr>
+            <td style="background-color: #f8fafc; padding: 50px 40px; border-top: 1px solid #e2e8f0;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                        <td align="center" style="padding-bottom: 35px;">
+                            <span style="font-size: 28px; font-weight: 900; color: #003139; letter-spacing: -1px;">
+                                Ihre Sicherheit steht an erster Stelle
+                            </span>
+                            <br>
+                            <span style="font-size: 15px; color: #64748b; margin-top: 10px; display: block;">
+                                Volle Transparenz und Schutz für Ihre Investition
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                    style="background-color: #ffffff; border-radius: 15px; padding: 35px; box-shadow: 0 4px 15px rgba(0, 49, 57, 0.08);">
+                    <tr>
+                        <td style="padding-bottom: 25px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td style="vertical-align: top; padding-right: 20px; padding-bottom: 20px;"
+                                        align="left">
+                                        <div
+                                            style="width: 50px; height: 50px; background-color: #56e341; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                            <span style="font-size: 24px; color: #003139;">€</span>
+                                        </div>
+                                    </td>
+                                    <td style="vertical-align: top;">
+                                        <span
+                                            style="font-size: 18px; font-weight: 900; color: #003139; display: block; margin-bottom: 5px;">
+                                            Einlagensicherung bis 1.000.000,00 Euro
+                                        </span>
+                                        <span style="font-size: 14px; color: #64748b; line-height: 1.6;">
+                                            Ihr Geld ist durch die gesetzliche deutsche Einlagensicherung geschützt.
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 25px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td style="vertical-align: top; padding-right: 20px; padding-bottom: 20px;"
+                                        align="left">
+                                        <div
+                                            style="width: 50px; height: 50px; background-color: #56e341; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                            <span style="font-size: 24px; color: #003139;">🔒</span>
+                                        </div>
+                                    </td>
+                                    <td style="vertical-align: top;">
+                                        <span
+                                            style="font-size: 18px; font-weight: 900; color: #003139; display: block; margin-bottom: 5px;">
+                                            Kostenloses Depot & Konto
+                                        </span>
+                                        <span style="font-size: 14px; color: #64748b; line-height: 1.6;">
+                                            Sie erhalten ein kostenloses Depot und Konto – alles in einer Hand.
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 25px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td style="vertical-align: top; padding-right: 20px; padding-bottom: 20px;"
+                                        align="left">
+                                        <div
+                                            style="width: 50px; height: 50px; background-color: #56e341; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                            <span style="font-size: 24px; color: #003139;">👁</span>
+                                        </div>
+                                    </td>
+                                    <td style="vertical-align: top;">
+                                        <span
+                                            style="font-size: 18px; font-weight: 900; color: #003139; display: block; margin-bottom: 5px;">
+                                            24/7 Zugang zu Ihrem Geld
+                                        </span>
+                                        <span style="font-size: 14px; color: #64748b; line-height: 1.6;">
+                                            Sie haben jederzeit Zugriff auf Ihre gesparten Werte und angelegtes Geld.
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 25px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td style="vertical-align: top; padding-right: 20px; padding-bottom: 20px;"
+                                        align="left">
+                                        <div
+                                            style="width: 50px; height: 50px; background-color: #56e341; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                            <span style="font-size: 24px; color: #003139;">👤</span>
+                                        </div>
+                                    </td>
+                                    <td style="vertical-align: top;">
+                                        <span
+                                            style="font-size: 18px; font-weight: 900; color: #003139; display: block; margin-bottom: 5px;">
+                                            Unabhängiger Berater
+                                        </span>
+                                        <span style="font-size: 14px; color: #64748b; line-height: 1.6;">
+                                            Wir bieten Ihnen einen unabhängigen Berater, der Ihre Interessen vertritt
+                                            und die besten Lösungen für Sie findet.
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                <tr>
+                                    <td style="vertical-align: middle; padding-right: 30px;">
+                                        <img src="https://imagizer.imageshack.com/v2/100x75q70/923/KVA2Un.png"
+                                            alt="Dutch Family" width="100"
+                                            style="height: auto; width: 100px; max-width: 100px; display: block;">
+                                    </td>
+                                    <td
+                                        style="vertical-align: middle; padding-left: 30px; border-left: 1px solid #e2e8f0;">
+                                        <img src="https://imagizer.imageshack.com/v2/100x75q70/924/j2W960.png"
+                                            alt="Deutsche Bank" width="100"
+                                            style="height: auto; width: 100px; max-width: 100px; display: block;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding-top: 15px;">
+                            <span style="font-size: 13px; color: #64748b; line-height: 1.6; text-align: center;">
+                                Dies sind unsere Partnerbanken. Wir haben Vereinbarungen mit über 100 Banken weltweit.
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- CONTACT FORM SECTION FOR ZAPIER -->
+        <tr>
+            <td style="background-color: #f8fafc; padding: 50px 40px; border-top: 1px solid #e2e8f0;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                    style="background-color: #ffffff; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,49,57,0.12);">
+                    <tr>
+                        <td style="padding: 35px 30px; text-align: center;">
+                            <!-- Form Header -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center" style="padding-bottom: 25px;">
+                                        <span
+                                            style="font-size: 26px; font-weight: 900; color: #003139; letter-spacing: -1px;">
                                             Kontaktformular
                                         </span>
                                         <br>
-                                        <span style="font-size: 15px; color: #64748b; margin-top: 10px; display: block;">
-                                            Füllen Sie das Formular aus und wir werden uns bei Ihnen melden.
+                                        <span
+                                            style="font-size: 14px; color: #64748b; margin-top: 10px; display: block;">
+                                            Füllen Sie das Formular aus, um das Exposé anzufordern
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- CTA Button that links to Zapier Form -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center" style="padding: 20px 0;">
+                                        <a href="contacto.html"
+                                            style="display: inline-block; padding: 20px 50px; background-color: #56e341; color: #003139; text-decoration: none; font-weight: 800; font-size: 18px; border-radius: 15px; text-align: center;">
+                                            📋 Formular ausfüllen
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center" style="padding-top: 15px;">
+                                        <span style="font-size: 13px; color: #64748b; line-height: 1.6;">
+                                            Klicken Sie auf den Button, um das sichere Kontaktformular zu öffnen.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding-top: 10px;">
+                                        <span style="font-size: 11px; color: #94a3b8; line-height: 1.6;">
+                                            Ihre Daten werden sicher übertragen und ausschließlich zur Bearbeitung Ihrer
+                                            Anfrage verwendet.
                                         </span>
                                     </td>
                                 </tr>
@@ -239,201 +833,213 @@
                         </td>
                     </tr>
                 </table>
+            </td>
+        </tr>
 
-                <!-- CONTACT FORM -->
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="email-container" style="background-color: #ffffff; max-width: 600px; width: 100%;">
+        <!-- GUARANTEE CERTIFICATE SECTION -->
+        <tr>
+            <td style="background-color: #f8fafc; padding: 50px 40px; border-top: 1px solid #e2e8f0;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                    style="background-color: #ffffff; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,49,57,0.12); border: 2px solid #56e341;">
                     <tr>
-                        <td style="padding: 0 40px 40px;">
-                            <div style="max-width: 600px; margin: 0 auto;">
-                                <form id="zapierForm" style="margin: 0;">
-                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
-                                        style="background-color: #ffffff; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,49,57,0.08);">
-                                        <!-- Form Body -->
-                                        <tr>
-                                            <td style="padding: 30px;">
-                                                <!-- Vorname & Nachname Row -->
-                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                                    <tr>
-                                                        <td style="padding-bottom: 20px; width: 50%;" class="form-field-mobile">
-                                                            <label for="vorname"
-                                                                style="display: block; font-size: 12px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px; color: #003139;">
-                                                                Vorname *
-                                                            </label>
-                                                            <input type="text" id="vorname" name="vorname" required
-                                                                style="width: 100%; padding: 14px 16px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 15px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #003139; background-color: #ffffff; box-sizing: border-box; -webkit-appearance: none;">
-                                                        </td>
-                                                        <td style="padding-bottom: 20px; width: 50%; padding-left: 15px;" class="form-field-mobile">
-                                                            <label for="nachname"
-                                                                style="display: block; font-size: 12px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px; color: #003139;">
-                                                                Nachname *
-                                                            </label>
-                                                            <input type="text" id="nachname" name="nachname" required
-                                                                style="width: 100%; padding: 14px 16px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 15px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #003139; background-color: #ffffff; box-sizing: border-box; -webkit-appearance: none;">
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <!-- Email & Telefon Row -->
-                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                                    <tr>
-                                                        <td style="padding-bottom: 20px; width: 50%;" class="form-field-mobile">
-                                                            <label for="email"
-                                                                style="display: block; font-size: 12px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px; color: #003139;">
-                                                                E-Mail *
-                                                            </label>
-                                                            <input type="email" id="email" name="email" required
-                                                                style="width: 100%; padding: 14px 16px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 15px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #003139; background-color: #ffffff; box-sizing: border-box; -webkit-appearance: none;">
-                                                        </td>
-                                                        <td style="padding-bottom: 20px; width: 50%; padding-left: 15px;" class="form-field-mobile">
-                                                            <label for="telefon"
-                                                                style="display: block; font-size: 12px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px; color: #003139;">
-                                                                Telefon
-                                                            </label>
-                                                            <input type="tel" id="telefon" name="telefon"
-                                                                style="width: 100%; padding: 14px 16px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 15px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #003139; background-color: #ffffff; box-sizing: border-box; -webkit-appearance: none;">
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <!-- Betreff Row -->
-                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                                    <tr>
-                                                        <td style="padding-bottom: 20px; width: 100%;">
-                                                            <label for="betreff"
-                                                                style="display: block; font-size: 12px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px; color: #003139;">
-                                                                Betreff *
-                                                            </label>
-                                                            <input type="text" id="betreff" name="betreff" required
-                                                                style="width: 100%; padding: 14px 16px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 15px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #003139; background-color: #ffffff; box-sizing: border-box; -webkit-appearance: none;">
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <!-- Nachricht Row -->
-                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                                    <tr>
-                                                        <td style="padding-bottom: 25px; width: 100%;">
-                                                            <label for="nachricht"
-                                                                style="display: block; font-size: 12px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px; color: #003139;">
-                                                                Nachricht *
-                                                            </label>
-                                                            <textarea id="nachricht" name="nachricht" required
-                                                                style="width: 100%; padding: 14px 16px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 15px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #003139; background-color: #ffffff; min-height: 130px; resize: vertical; box-sizing: border-box; -webkit-appearance: none;"></textarea>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <!-- Hidden datum field -->
-                                                <input type="hidden" id="datum" name="datum">
-                                                <!-- Submit Button Row -->
-                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                                    <tr>
-                                                        <td align="center" style="padding-top: 10px;">
-                                                            <button type="submit" id="submitBtn"
-                                                                style="background-color: #003139; color: #ffffff; padding: 18px 50px; border: none; border-radius: 12px; font-size: 17px; font-weight: 800; cursor: pointer; width: 100%; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-shadow: 0 4px 15px rgba(0, 49, 57, 0.3); transition: all 0.3s ease;">
-                                                                Absenden
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </form>
-
-                                <!-- Success Message -->
-                                <div class="success-message" id="successMessage" style="display: none; background-color: #dcfce7; border: 1px solid #86efac; border-radius: 12px; padding: 20px; margin-top: 20px; text-align: center;">
-                                    <h3 style="color: #166534; font-size: 18px; margin-bottom: 8px;">✓ Vielen Dank!</h3>
-                                    <p style="color: #15803d; font-size: 14px;">Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns in Kürze bei Ihnen melden.</p>
-                                </div>
-
-                                <!-- Error Message -->
-                                <div class="error-message" id="errorMessage" style="display: none; background-color: #fee2e2; border: 1px solid #fca5a5; border-radius: 12px; padding: 20px; margin-top: 20px; text-align: center;">
-                                    <h3 style="color: #991b1b; font-size: 18px; margin-bottom: 8px;">✗ Es ist ein Fehler aufgetreten</h3>
-                                    <p style="color: #b91c1c; font-size: 14px;">Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.</p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-
-                <!-- Footer -->
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="email-container" style="background-color: #ffffff; max-width: 600px; width: 100%;">
-                    <tr>
-                        <td style="padding: 30px 40px; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">
+                        <td style="padding: 35px 30px; text-align: center;">
+                            <!-- Certificate Header -->
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
-                                    <td align="center">
-                                        <a href="index2.html" style="font-size: 13px; color: #64748b; text-decoration: none;">Zurück zur Hauptseite</a>
+                                    <td align="center" style="padding-bottom: 25px;">
+                                        <div
+                                            style="width: 80px; height: 80px; background-color: #56e341; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                                            <span style="font-size: 40px;">✓</span>
+                                        </div>
+                                        <br>
+                                        <span
+                                            style="font-size: 26px; font-weight: 900; color: #003139; letter-spacing: -1px;">
+                                            Zertifikat zur Garantie
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 25px;">
+                                        <div
+                                            style="height: 2px; background: linear-gradient(90deg, transparent, #56e341, transparent); margin: 0;">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Guarantee Points -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td style="padding-bottom: 15px; text-align: left;">
+                                        <span style="font-size: 14px; color: #003139; line-height: 1.8;">
+                                            <strong style="color: #56e341; font-size: 18px;">✓</strong>
+                                            <strong>Milliarden-Unternehmen</strong> – Finanzstark und zuverlässig
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 15px; text-align: left;">
+                                        <span style="font-size: 14px; color: #003139; line-height: 1.8;">
+                                            <strong style="color: #56e341; font-size: 18px;">✓</strong>
+                                            <strong>BAFIN-lizenziert & reguliert</strong> – Höchste Standards erfüllt
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 15px; text-align: left;">
+                                        <span style="font-size: 14px; color: #003139; line-height: 1.8;">
+                                            <strong style="color: #56e341; font-size: 18px;">✓</strong>
+                                            <strong>AA-Bewertung</strong> – Exzellente Kreditwürdigkeit
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 15px; text-align: left;">
+                                        <span style="font-size: 14px; color: #003139; line-height: 1.8;">
+                                            <strong style="color: #56e341; font-size: 18px;">✓</strong>
+                                            <strong>Einlagensicherung</strong> – Wir haben das Geld hinterlegt für Ihre
+                                            Sicherheit
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 15px; text-align: left;">
+                                        <span style="font-size: 14px; color: #003139; line-height: 1.8;">
+                                            <strong style="color: #56e341; font-size: 18px;">✓</strong>
+                                            <strong>Transparente Kostenstruktur</strong> – Keine versteckten Gebühren
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Footer Certificate -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td style="padding-top: 25px;">
+                                        <div
+                                            style="height: 2px; background: linear-gradient(90deg, transparent, #56e341, transparent); margin: 0;">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding-top: 20px;">
+                                        <span style="font-size: 12px; color: #64748b; font-style: italic;">
+                                            Dutch Family B.V. – Ihr vertrauenswürdiger Partner seit 2024
+                                        </span>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
                 </table>
+            </td>
+        </tr>
 
+        <!-- CTA SECTION (Original) -->
+        <tr>
+            <td style="background-color: #f8fafc; padding: 50px 40px; border-top: 1px solid #e2e8f0;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                        <td align="center" style="padding-bottom: 30px;">
+                            <span style="font-size: 28px; font-weight: 900; color: #003139; letter-spacing: -1px;">
+                                Beratung anfordern
+                            </span>
+                            <br>
+                            <span style="font-size: 15px; color: #64748b; margin-top: 10px; display: block;">
+                                Erhalten Sie detaillierte Unterlagen zu den Shell-Anleihen.
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <a href="#"
+                                style="display: inline-block; padding: 18px 50px; background-color: #56e341; color: #003139; text-decoration: none; font-weight: 800; font-size: 16px; border-radius: 12px;">
+                                Jetzt anfragen
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- FOOTER -->
+        <tr>
+            <td style="background-color: #003139; padding: 50px 40px 40px; text-align: center;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                        <td align="center" style="padding-bottom: 35px;">
+                            <!-- Footer Logos -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                <tr>
+                                    <td style="vertical-align: middle; padding-right: 25px;">
+                                        <!-- Dutch Family Logo -->
+                                        <img src="https://imagizer.imageshack.com/v2/280x200q70/923/4LocVL.png"
+                                            alt="Dutch Family" width="180"
+                                            style="height: auto; max-width: 180px; width: 100%; display: block;">
+                                    </td>
+                                    <td
+                                        style="vertical-align: middle; padding-left: 25px; border-left: 1px solid rgba(255,255,255,0.2);">
+                                        <!-- Shell Logo Footer -->
+                                        <img src="https://imagizer.imageshack.com/v2/100x75q70/922/byy19C.png"
+                                            alt="Shell Logo" width="85"
+                                            style="height: auto; width: 85px; max-width: 85px; display: block; background-color: transparent;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 25px;">
+                            <div style="height: 1px; background: rgba(255, 255, 255, 0.1); margin: 0;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="font-size: 11px; color: #a5b4bc; line-height: 1.8; opacity: 0.8; text-align: center; max-width: 500px; margin: 0 auto;">
+                            <strong>Hinweis:</strong> Die dargestellten Renditen sind vergangenheitsorientiert.
+                            Wertpapiergeschäfte beinhalten Risiken.
+                            Eine Anlageentscheidung sollte nur auf Basis des aktuellen Prospekts erfolgen.
+                            Shell International Finance B.V. (Rating Aa2 - Moody's) - Investment Grade Qualität.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="padding-top: 15px; font-size: 11px; color: #a5b4bc; line-height: 1.8; opacity: 0.8; text-align: center;">
+                            <strong style="color: #ffffff;">Dutch Family B.V.</strong><br>
+                            🇳🇱 Hauptsitz: Wilhelminakade 173, 3072 Rotterdam, Netherlands<br>
+                            🇳🇱 Web: https://dutch-family.de | Email: info@dutch-family.de<br>
+                            🇩🇪 Kundenservice Berlin: Charlottenstraße 4, 10969 Berlin<br>
+                            🇩🇪 Kundenservice München: Mies-van-der-Rohe-Straße 6, 80807 München<br>
+                            🇩🇪 Marketing und Vertrieb: Gustav-Heinemann-Ufer 72-74, 50968 Köln<br>
+                            <br>
+                            © 2026 Dutch Family B.V. Alle Rechte vorbehalten.
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    </table>
+    <!-- End Email Container -->
+
+    <!-- Footer Links (for legal compliance) -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px;">
+        <tr>
+            <td align="center" style="padding: 20px; font-size: 12px; color: #94a3b8;">
+                <a href="{$unsubscribe}"
+                    style="color: #94a3b8; text-decoration: underline; margin: 0 10px;">Abmelden</a>
+                <span style="color: #e2e8f0;">|</span>
+                <a href="#" style="color: #94a3b8; text-decoration: underline; margin: 0 10px;">Datenschutz</a>
+                <span style="color: #e2e8f0;">|</span>
+                <a href="#" style="color: #94a3b8; text-decoration: underline; margin: 0 10px;">Impressum</a>
             </td>
         </tr>
     </table>
 
-    <!-- JavaScript for Zapier webhook submission -->
-    <script>
-        const ZAPIER_WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/26345831/uebfctt/';
-
-        document.getElementById('zapierForm').addEventListener('submit', async function (e) {
-            e.preventDefault();
-
-            const submitBtn = document.getElementById('submitBtn');
-            const successMessage = document.getElementById('successMessage');
-            const errorMessage = document.getElementById('errorMessage');
-
-            // Hide messages
-            successMessage.style.display = 'none';
-            errorMessage.style.display = 'none';
-
-            // Disable button
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Wird gesendet...';
-
-            // Get current timestamp in ISO format
-            const now = new Date();
-            const isoDate = now.toISOString();
-
-            // Set the hidden datum field
-            document.getElementById('datum').value = isoDate;
-
-            // Collect form data
-            const formData = {
-                vorname: document.getElementById('vorname').value,
-                nachname: document.getElementById('nachname').value,
-                email: document.getElementById('email').value,
-                telefon: document.getElementById('telefon').value,
-                betreff: document.getElementById('betreff').value,
-                nachricht: document.getElementById('nachricht').value,
-                datum: isoDate
-            };
-
-            try {
-                const response = await fetch(ZAPIER_WEBHOOK_URL, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(formData)
-                });
-
-                // With no-cors, response is opaque - we assume success if no error thrown
-                successMessage.style.display = 'block';
-                document.getElementById('zapierForm').reset();
-            } catch (error) {
-                console.error('Error sending form:', error);
-                errorMessage.style.display = 'block';
-            } finally {
-                // Re-enable button
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Anfrage absenden';
-            }
-        });
-    </script>
+    </td>
+    </tr>
+    </table>
 
 </body>
 
 </html>
-
