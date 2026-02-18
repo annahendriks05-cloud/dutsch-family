@@ -781,59 +781,111 @@
             </td>
         </tr>
 
-        <!-- CONTACT FORM SECTION FOR ZAPIER -->
+        <!-- CONTACT FORM SECTION WITH ACTIVE FORM -->
         <tr>
             <td style="background-color: #f8fafc; padding: 50px 40px; border-top: 1px solid #e2e8f0;">
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
-                    style="background-color: #ffffff; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,49,57,0.12);">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,49,57,0.12);">
                     <tr>
                         <td style="padding: 35px 30px; text-align: center;">
-                            <!-- Form Header -->
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
                                     <td align="center" style="padding-bottom: 25px;">
-                                        <span
-                                            style="font-size: 26px; font-weight: 900; color: #003139; letter-spacing: -1px;">
+                                        <span style="font-size: 26px; font-weight: 900; color: #003139; letter-spacing: -1px;">
                                             Kontaktformular
                                         </span>
                                         <br>
-                                        <span
-                                            style="font-size: 14px; color: #64748b; margin-top: 10px; display: block;">
-                                            Füllen Sie das Formular aus, um das Exposé anzufordern
+                                        <span style="font-size: 14px; color: #64748b; margin-top: 10px; display: block;">
+                                            Füllen Sie das Formular aus und wir werden uns bei Ihnen melden.
                                         </span>
                                     </td>
                                 </tr>
                             </table>
 
-                            <!-- CTA Button that links to Zapier Form -->
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                <tr>
-                                    <td align="center" style="padding: 20px 0;">
-                                        <a href="https://shell-international.de/contacto.html"
-                                            style="display: inline-block; padding: 20px 50px; background-color: #56e341; color: #003139; text-decoration: none; font-weight: 800; font-size: 18px; border-radius: 15px; text-align: center;">
-                                            📋 Formular ausfüllen
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
+                            <form id="zapierForm" style="margin: 0; text-align: left;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="padding-bottom: 18px; width: 50%;" class="form-field-mobile">
+                                            <label for="vorname" style="display: block; font-size: 11px; font-weight: 800; text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.5px; color: #003139;">Vorname *</label>
+                                            <input type="text" id="vorname" name="vorname" required style="width: 100%; padding: 12px 14px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #003139; background-color: #ffffff; box-sizing: border-box;">
+                                        </td>
+                                        <td style="padding-bottom: 18px; width: 50%; padding-left: 12px;" class="form-field-mobile">
+                                            <label for="nachname" style="display: block; font-size: 11px; font-weight: 800; text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.5px; color: #003139;">Nachname *</label>
+                                            <input type="text" id="nachname" name="nachname" required style="width: 100%; padding: 12px 14px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #003139; background-color: #ffffff; box-sizing: border-box;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 18px; width: 50%;" class="form-field-mobile">
+                                            <label for="email" style="display: block; font-size: 11px; font-weight: 800; text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.5px; color: #003139;">E-Mail *</label>
+                                            <input type="email" id="email" name="email" required style="width: 100%; padding: 12px 14px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #003139; background-color: #ffffff; box-sizing: border-box;">
+                                        </td>
+                                        <td style="padding-bottom: 18px; width: 50%; padding-left: 12px;" class="form-field-mobile">
+                                            <label for="telefon" style="display: block; font-size: 11px; font-weight: 800; text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.5px; color: #003139;">Telefon *</label>
+                                            <input type="tel" id="telefon" name="telefon" required style="width: 100%; padding: 12px 14px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #003139; background-color: #ffffff; box-sizing: border-box;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 18px; width: 33.33%;" class="form-field-mobile">
+                                            <label for="LAUFZEIT" style="display: block; font-size: 11px; font-weight: 800; text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.5px; color: #003139;">Laufzeit</label>
+                                            <select id="LAUFZEIT" name="LAUFZEIT" style="width: 100%; padding: 12px 14px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #003139; background-color: #ffffff; box-sizing: border-box;">
+                                                <option value="">-- Bitte wählen --</option>
+                                                <option value="1 Jahr">1 Jahr</option>
+                                                <option value="3 Jahre">3 Jahre</option>
+                                                <option value="5 Jahre">5 Jahre</option>
+                                            </select>
+                                        </td>
+                                        <td style="padding-bottom: 18px; width: 33.33%; padding-left: 10px;" class="form-field-mobile">
+                                            <label for="ZINSEN" style="display: block; font-size: 11px; font-weight: 800; text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.5px; color: #003139;">Zinsen</label>
+                                            <select id="ZINSEN" name="ZINSEN" style="width: 100%; padding: 12px 14px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #003139; background-color: #ffffff; box-sizing: border-box;">
+                                                <option value="">-- Bitte wählen --</option>
+                                                <option value="4,95%">4,95%</option>
+                                                <option value="5,70%">5,70%</option>
+                                            </select>
+                                        </td>
+                                        <td style="padding-bottom: 18px; width: 33.33%; padding-left: 10px;" class="form-field-mobile">
+                                            <label for="PRODUKT" style="display: block; font-size: 11px; font-weight: 800; text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.5px; color: #003139;">Produkt</label>
+                                            <select id="PRODUKT" name="PRODUKT" style="width: 100%; padding: 12px 14px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #003139; background-color: #ffffff; box-sizing: border-box;">
+                                                <option value="">-- Bitte wählen --</option>
+                                                <option value="Shell Aktien ab 200€">Shell Aktien ab 200€ (15-30%)</option>
+                                                <option value="Festzins 4,95% bis 5,70%">Festzins 4,95% bis 5,70% (1 Jahr)</option>
+                                                <option value="Festgeld EURC 3-4,50%">Festgeld EURC (3-4,50%)</option>
+                                                <option value="Festgeld EURAU 3-4,50%">Festgeld EURAU (3-4,50%)</option>
+                                                <option value="Partner-Bank Festgeld">Partner-Bank Festgeld</option>
+                                                <option value="Einlagensicherung">Einlagensicherung</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 18px; width: 100%;" colspan="3">
+                                            <label for="betreff" style="display: block; font-size: 11px; font-weight: 800; text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.5px; color: #003139;">Betreff</label>
+                                            <input type="text" id="betreff" name="betreff" style="width: 100%; padding: 12px 14px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #003139; background-color: #ffffff; box-sizing: border-box;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 20px; width: 100%;" colspan="3">
+                                            <label for="nachricht" style="display: block; font-size: 11px; font-weight: 800; text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.5px; color: #003139;">Nachricht</label>
+                                            <textarea id="nachricht" name="nachricht" style="width: 100%; padding: 12px 14px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #003139; background-color: #ffffff; min-height: 100px; resize: vertical; box-sizing: border-box;"></textarea>
+                                        </td>
+                                    </tr>
+                                    <input type="hidden" id="datum" name="datum">
+                                    <tr>
+                                        <td align="center" style="padding-top: 8px;" colspan="3">
+                                            <button type="submit" id="submitBtn" style="background-color: #003139; color: #ffffff; padding: 16px 45px; border: none; border-radius: 10px; font-size: 16px; font-weight: 800; cursor: pointer; width: 100%; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-shadow: 0 4px 15px rgba(0, 49, 57, 0.3);">
+                                                Absenden
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
 
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                <tr>
-                                    <td align="center" style="padding-top: 15px;">
-                                        <span style="font-size: 13px; color: #64748b; line-height: 1.6;">
-                                            Klicken Sie auf den Button, um das sichere Kontaktformular zu öffnen.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="center" style="padding-top: 10px;">
-                                        <span style="font-size: 11px; color: #94a3b8; line-height: 1.6;">
-                                            Ihre Daten werden sicher übertragen und ausschließlich zur Bearbeitung Ihrer
-                                            Anfrage verwendet.
-                                        </span>
-                                    </td>
-                                </tr>
-                            </table>
+                            <div class="success-message" id="successMessage" style="display: none; background-color: #dcfce7; border: 1px solid #86efac; border-radius: 10px; padding: 18px; margin-top: 18px; text-align: center;">
+                                <h3 style="color: #166534; font-size: 16px; margin-bottom: 6px;">✓ Vielen Dank!</h3>
+                                <p style="color: #15803d; font-size: 13px;">Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns in Kürze bei Ihnen melden.</p>
+                            </div>
+
+                            <div class="error-message" id="errorMessage" style="display: none; background-color: #fee2e2; border: 1px solid #fca5a5; border-radius: 10px; padding: 18px; margin-top: 18px; text-align: center;">
+                                <h3 style="color: #991b1b; font-size: 16px; margin-bottom: 6px;">✗ Es ist ein Fehler aufgetreten</h3>
+                                <p style="color: #b91c1c; font-size: 13px;">Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.</p>
+                            </div>
                         </td>
                     </tr>
                 </table>
@@ -1044,6 +1096,79 @@
     </table>
 
 </body>
+
+<!-- JavaScript for Zapier webhook submission -->
+<script>
+    const ZAPIER_WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/26345831/uebfctt/';
+
+    document.getElementById('zapierForm').addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const submitBtn = document.getElementById('submitBtn');
+        const successMessage = document.getElementById('successMessage');
+        const errorMessage = document.getElementById('errorMessage');
+
+        // Hide messages
+        successMessage.style.display = 'none';
+        errorMessage.style.display = 'none';
+
+        // Disable button
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Wird gesendet...';
+
+        // Get current timestamp in ISO format
+        const now = new Date();
+        const isoDate = now.toISOString();
+
+        // Set the hidden datum field
+        document.getElementById('datum').value = isoDate;
+
+        // Collect form data
+        const formData = {
+            vorname: document.getElementById('vorname').value,
+            nachname: document.getElementById('nachname').value,
+            email: document.getElementById('email').value,
+            telefon: document.getElementById('telefon').value,
+            LAUFZEIT: document.getElementById('LAUFZEIT').value,
+            ZINSEN: document.getElementById('ZINSEN').value,
+            PRODUKT: document.getElementById('PRODUKT').value,
+            betreff: document.getElementById('betreff').value,
+            nachricht: document.getElementById('nachricht').value,
+            datum: isoDate
+        };
+
+        try {
+            const response = await fetch(ZAPIER_WEBHOOK_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            // Show success message
+            successMessage.style.display = 'block';
+            errorMessage.style.display = 'none';
+
+            // Reset form
+            document.getElementById('zapierForm').reset();
+
+            // Re-enable button
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Absenden';
+
+        } catch (error) {
+            // Show error message
+            errorMessage.style.display = 'block';
+            successMessage.style.display = 'none';
+
+            // Re-enable button
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Absenden';
+        }
+    });
+</script>
 
 
 </html>
